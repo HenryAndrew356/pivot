@@ -1,0 +1,141 @@
+
+.parent0{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.parent01{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.parent0 div{
+    width: 400px;
+    justify-content: center;
+    height: 150px;
+}
+
+img{
+    border-radius: 50%;
+    margin: 10px;
+    border:1px solid black;
+}
+
+.child1{
+    align-items: center;
+    width: 50%;
+    display:flex;
+    background-color: rgb(112, 108, 108);
+    
+}
+.child2{
+    /* align-items: center; */
+    display:block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 108, 108);
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 22px;
+    font-size: 13px;
+}
+
+
+.child01{
+    width: 298px;
+    background-color: rgba(204, 204, 204, 0.955);
+    text-align: left;
+    color: white;
+    height: 750px;
+    border: 1px solid black;
+    height: 760px;
+}
+
+.child02{
+    width: 498px;
+    border: 1px solid black;
+    height: 760px;
+}
+
+.type0{
+    background-color: aqua;
+}
+
+.type1{
+    background-color: blue;
+}
+
+h2{
+    margin: 4px;
+    margin-top: 18px;
+    margin-left: 20px;
+    color:black;
+}
+hr{
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 18px;
+    padding: 0;
+    border: 1px solid black;
+}
+h4{
+    color:rgb(167, 167, 227);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+li{
+    color: black;
+    font-size: 16px;
+    font-family: Georgia;
+}
+
+#h2v{
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-family: serif;
+    margin-right: 65px;
+    color: white;
+}
+#h4v{
+    margin-right: 35px;
+    margin-top: 8PX;
+    font-size: 22px;
+    font-family: serif;
+}
+
+p{
+    margin-left: 18px;
+}
+.mtitle{
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+.curvado{
+    margin-top: 0;
+    font: oblique bold 120% cursive;
+    margin-left: 24px;
+    margin-bottom: 0;
+}
+.postcurva{
+    color:rgb(94, 91, 91);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+ul{
+    margin-top: 5px;
+    margin-left: 2px;
+}
