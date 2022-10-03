@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link 
+            rel="stylesheet" 
+            href="{{url_for('static',filename='css/main.css')}}"
+            >
+    </head>
+    <body>
+        <div>
+            <h1>Curso: Desarrollo Basado en Plataformas</h1>
+        </div>
+        <div>
+            <h2>De: Medina Condo Henry Andrew</h2>
+            <h3>Visualización de actividades:</h3>
+            <!-- <form action="/newPage" method="post"></form> -->
+            <ul>
+                <li>
+                    <form action="/cvexample" method="post">
+                        <a class="af">Clone CV</a>
+                        <button 
+                            name="forwardBtn" 
+                            type="submit"
+                            >
+                            View
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form action="/formOFcv" method="post">
+                        
+                        <a class="af">Form to CV</a>
+                        <button 
+                            name="forwardBtn" 
+                            type="submit"
+                            >
+                            View
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form action="/todolist" method="post">
+                        <a class="af">Todo List</a>
+                        <button 
+                            name="forwardBtn" 
+                            type="submit"
+                            >
+                            View
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
