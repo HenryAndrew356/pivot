@@ -9,7 +9,7 @@ app=Flask(__name__)
 def front():
     return render_template ('frontPage.html')
 
-@app.route("/formOFcv", methods=['POST'])
+@app.route("/formOFcv", methods=['GET','POST'])
 def formcvPage():
     return render_template ('formCV.html')
 
@@ -17,7 +17,7 @@ def formcvPage():
 def cvclone():
     return render_template ('cvClone.html')
 
-@app.route("/returncv", methods=['POST'])
+@app.route("/returncv", methods=['GET','POST'])
 def formofcv():
     return render_template ('cvOfForm.html')
 

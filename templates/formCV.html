@@ -5,11 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script
-            type="text/javascript"
-            src="{{url_for('static',filename='script/script.js')}}"
-            >
-        </script>
+        
         <title>Form CV</title>
         <link
             rel="stylesheet"
@@ -194,10 +190,10 @@
                                 <br>
                                 <input 
                                     type="radio" 
-                                    name="C#" 
-                                    value="c#"
+                                    name="others" 
+                                    value="other"
                                     >
-                                <input type="text" name="Otros" value="" placeholder="Ejm: otros ...">
+                                <input type="text" name="others" value="" placeholder="Ejm: otros ...">
                                 <br>
                             </form>
                         </div>
@@ -279,11 +275,18 @@
                         <br>
                     </div>
                 </form>
-                <script type="text/javascript">
+                <button type="submit">Submit</button>
+                <!-- <script type="text/javascript">
                     $(function(){
                         $('#datepicker').datepicker()
                     })
-                </script>
+                </script> -->
+                <script
+                   
+                    src="static/script/script.js"
+                    >
+                </script>   
+                 <!-- type="text/javascript" -->
             </div>
         </div> 
     </body>
