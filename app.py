@@ -1,8 +1,11 @@
 from flask import Flask, render_template
+from flask_cors import CORS
+
 
 app=Flask(__name__)
+CORS(app)
 
-@app.route("/")
+@app.route("/",methods=['GET'])
 def front():
     return render_template ('frontPage.html')
 
@@ -22,5 +25,5 @@ def formofcv():
 def todolistF():
     return render_template ('todo_list.html')
 
-# if __name__=="__main__":
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
