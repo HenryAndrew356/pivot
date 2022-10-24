@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Demo: Todo App</title>
+        <title>Todo List</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="icon" href="{{ url_for('static', filename='img/cs.ico') }}"> -->
@@ -25,6 +25,7 @@
             </div>
         </main>
         <div class="container">
+
             <!-- Modal Init -->
             <div style="text-align: right;">
                 <button 
@@ -90,7 +91,6 @@
                     <tr>
                         <th class="task-id">ID</th>
                         <th class="task">Nombre Tarea</th>
-                        <!-- <th class="status">Estado</th> -->
                         <th class="update">Editar</th>
                         <th class="update">Eliminar</th>
                     </tr>
@@ -100,37 +100,6 @@
                         <tr>
                             <td>{{item.id}}</td>
                             <td>{{item.task}}</td>
-
-                            <!-- {% if item.status == "In Progress" %}
-                                <td>
-                                    <button 
-                                        type="button" 
-                                        class="btn btn-outline-warning btn-sm state" 
-                                        data-source="{{item.id}}">
-                                            {{item.status}}
-                                    </button>
-                                </td>
-                            {%endif%}
-                            {% if item.status == "Todo" %}
-                                <td>
-                                    <button 
-                                        type="button" 
-                                        class="btn btn-outline-secondary btn-sm state" 
-                                        data-source="{{item.id}}">
-                                            {{item.status}}
-                                    </button>
-                                </td>
-                            {%endif%}
-                            {% if item.status == "Complete" %}
-                                <td>
-                                    <button 
-                                        type="button" 
-                                        class="btn btn-outline-success btn-sm state" 
-                                        data-source="{{item.id}}">
-                                            {{item.status}}
-                                    </button>
-                                </td>
-                            {%endif%} -->
                             <td>
                                 <button 
                                     type="button" 

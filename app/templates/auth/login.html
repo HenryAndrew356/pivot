@@ -1,0 +1,41 @@
+{% extends './base.html' %}
+
+{% block title %}TestPage{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+{% endblock %}
+{% block body %}
+<main class="form-signin w-100 m-auto text-center">
+  <form>
+    <img class="mb-4" src="{{ url_for('static',filename='img/in.png') }}" alt="Hola" width="125" height="125">
+    <h1 class="h3 mb-3 fw-normal">Inicie sesion en</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" value="" placeholder="name@example.com">
+      <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" value="">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Recordarmelo
+      </label>
+    </div>
+    <div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Crearme una Cuenta</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Usar una prueba</a></li>
+      </ul>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+    <p class="mt-5 mb-3 text-muted">&copy;2022</p>
+  </form>
+</main>
+{% endblock %}

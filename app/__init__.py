@@ -24,5 +24,6 @@ def init_connection_engine():
     )
     return pool
 app = Flask(__name__)
+app.secret_key="secretKeyAndrew"
 db = init_connection_engine()
 from app import routes
