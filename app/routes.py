@@ -22,7 +22,7 @@ flow=Flow.from_client_secrets_file(
     redirect_uri="http://127.0.0.1:5000/callback"
     )
 
-
+#  RC
 
 @app.route("/", methods=['GET'])
 def front():
@@ -35,6 +35,11 @@ def formcvPage():
 @app.route("/base", methods=['GET','POST'])
 def testBase():
     return render_template ('base.html')
+
+@app.route("/loginT", methods=['GET','POST'])
+def loginT():
+    return render_template ('auth/login.html')
+    # return redirect ("/protected_area")
     
 @app.route("/login", methods=['GET','POST'])
 def login():
@@ -136,6 +141,7 @@ def callback():
 
 @app.route("/logout")
 def logout():
+    print("Ingreso al session.clear()")
     session.clear()
     return redirect ("/ll")
 
