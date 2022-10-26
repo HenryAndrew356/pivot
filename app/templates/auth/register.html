@@ -17,7 +17,7 @@
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Nombres</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="firstNameF" placeholder="Ejemplo: Fernando Alfonso" value="" required>
               <div class="invalid-feedback">
                 Valid first name is required.
               </div>
@@ -25,73 +25,74 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="lastNameF" placeholder="Ejemplo: Rivera Castañeda" value="" required>
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
             </div>
 
             <div class="col-12">
-              <label for="username" class="form-label">Username</label>
+              <label for="username" class="form-label">Nombre de Usuario<span class="text-muted"> (Opcional)</span></label>
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <input type="text" class="form-control" id="usernameF" placeholder="Ejemplo: fernandoRivera007" required>
               <div class="invalid-feedback">
-                  Your username is required.
+                  Tu nombre de usuario es requerido.
                 </div>
               </div>
             </div>
 
             <div class="col-12">
-              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailF" placeholder="Ejemplo: carlos.alcantara@ucsm.edu.pe">
               <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
+                Porfavor ingrese un correo electronico valido.
               </div>
             </div>
 
             <div class="col-12">
-              <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <label for="address" class="form-label">Ocupación</label>
+              <input type="text" class="form-control" id="ocupationF" placeholder="Ejemplo: Arquitecto" required>
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
             </div>
 
             <div class="col-12">
-              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              <label for="address2" class="form-label">Telefono<span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="telefonoF" placeholder="Ejemplo: 938564789">
             </div>
 
-            <div class="col-md-5">
-              <label for="country" class="form-label">Country</label>
+            <div class="col-md-6">
+              <label for="country" class="form-label">Nacionalidad</label>
               <select class="form-select" id="country" required>
-                <option value="">Choose...</option>
+                <option value="">Seleccione ...</option>
                 <option>United States</option>
+                <option>Peru</option>
+                <option>España</option>
+                <option>Francia</option>
+                <option>Puerto Rico</option>
               </select>
               <div class="invalid-feedback">
                 Please select a valid country.
               </div>
             </div>
 
-            <div class="col-md-4">
-              <label for="state" class="form-label">State</label>
-              <select class="form-select" id="state" required>
-                <option value="">Choose...</option>
-                <option>California</option>
+            <div class="col-md-6">
+              <label for="country" class="form-label">Aptitudes</label>
+              <select class="form-select" id="aptitudesF" required>
+                <option value="">Escoga ...</option>
+                <option>Responsabilidad</option>
+                <option>Puntualidad</option>
+                <option>Resiliencia</option>
+                <option>Creatividad</option>
+                <option>Trabajo en Equipo</option>
               </select>
               <div class="invalid-feedback">
-                Please provide a valid state.
+                Please select a valid country.
               </div>
             </div>
 
-            <div class="col-md-3">
-              <label for="zip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
-              <div class="invalid-feedback">
-                Zip code required.
-              </div>
-            </div>
           </div>
           
           <hr class="my-4">
@@ -139,55 +140,50 @@
             </div>
           </div>
 
-          <div class="row gy-3">
-            <div class="col-md-6">
-              <label for="cc-name" class="form-label">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>
-              <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback">
-                Name on card is required
-              </div>
+          <!--  -->
+          <!--  -->
+          <h4 class="mb-3">Lenguajes de Programacion</h4>
+          <div class="my-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="c++F" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                C++
+              </label>
             </div>
-
-            <div class="col-md-6">
-              <label for="cc-number" class="form-label">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-                Credit card number is required
-              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="c#F" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                C#
+              </label>
             </div>
-
-            <div class="col-md-3">
-              <label for="cc-expiration" class="form-label">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
-                Expiration date required
-              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="rubyF" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Ruby
+              </label>
             </div>
-
-            <div class="col-md-3">
-              <label for="cc-cvv" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
-                Security code required
-              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="PythonF" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Python
+              </label>
             </div>
           </div>
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Ingresar y confirmar informacion.</button>
         </form>
       </div>
     </div>
   </main>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017–2022 Company Name</p>
+    <p class="mb-1">&copy; 2022 Andrew</p>
     <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
+      <li class="list-inline-item"><a href="#">Contacto</a></li>
+      <!-- <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li> -->
     </ul>
   </footer>
 </div>
