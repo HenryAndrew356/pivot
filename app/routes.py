@@ -30,7 +30,7 @@ def front():
 
 @app.route("/formOFcv", methods=['GET','POST'])
 def formcvPage():
-    return render_template ('formCV.html')
+    return render_template ('auth/register.html')
 
 @app.route("/base", methods=['GET','POST'])
 def testBase():
