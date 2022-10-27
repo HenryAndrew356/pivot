@@ -1,6 +1,6 @@
 import os
 import sqlalchemy
-from flask import Flask
+from flask import Flask,redirect
 from yaml import load, Loader
 from dotenv import load_dotenv
 from os import environ
@@ -8,11 +8,8 @@ from flask_cors import CORS
 from flask_restful import Api
 from config import conexion
 
-
 # Cargar todas las variables del archivo .env
 load_dotenv()
-
-
 
 def init_connection_engine():
     if os.environ.get('GAE_ENV') != 'standard':
@@ -43,3 +40,7 @@ conexion.init_app(app)
 app.secret_key="secretKeyAndrew"
 db = init_connection_engine()
 from app import routes
+
+@app.route('/', methods=['GET','POST'])
+def inicio():
+    return redirect('/login')
