@@ -2,6 +2,17 @@ import os
 import sqlalchemy
 from flask import Flask
 from yaml import load, Loader
+from dotenv import load_dotenv
+from os import environ
+from flask_cors import CORS
+from flask_restful import Api
+from config import conexion
+
+
+# Cargar todas las variables del archivo .env
+load_dotenv()
+
+
 
 def init_connection_engine():
     if os.environ.get('GAE_ENV') != 'standard':
@@ -24,6 +35,11 @@ def init_connection_engine():
     )
     return pool
 app = Flask(__name__)
+api=Api(app)
+CORS(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = environ['DATABASE_URL']
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+conexion.init_app(app)
 app.secret_key="secretKeyAndrew"
 db = init_connection_engine()
 from app import routes
