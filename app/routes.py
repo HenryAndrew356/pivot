@@ -160,4 +160,12 @@ def protected_area():
 
 @app.route("/testJS",methods=['POST','GET'])
 def testJS():
-    return render_template ("cv/cv01.html")
+    nombre=request.form.get("nameF")
+    apellido=request.form.get("apellidoF")
+    telefono=request.form.get("telefonoF")
+    gmail=request.form.get("correoF")
+    nivelEnglish=request.form.get("nivelEnglishF")
+    habilidades=[request.form.get("habilidadesF1"),request.form.get("habilidadesF2"),request.form.get("habilidadesF3"),request.form.get("habilidadesF4")]
+    aptitudes=[request.form.get("aptitudesF1"),request.form.get("aptitudesF2"),request.form.get("aptitudesF3"),request.form.get("aptitudesF3"),request.form.get("aptitudesF5")]
+    experiencia=[request.form.get("experienciaF1"),request.form.get("experienciaF2"),request.form.get("experienciaF1")]
+    return render_template ("cv/cv01.html",nombre=nombre,apellido=apellido,telefono=telefono,gmail=gmail,nivelEnglish=nivelEnglish,habilidades=habilidades,aptitudes=aptitudes,experiancia=experiancia)
