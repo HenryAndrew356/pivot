@@ -153,5 +153,11 @@ def ll():
 @app.route("/protected_area")
 @login_is_required
 def protected_area():
-    # return "Go to Login Page <a href='/logout'><button>Go Logout</button></a>"
+    return "Go to Login Page <a href='/logout'><button>Go Logout</button></a>"
     return "Welcome to Protected Page"
+
+
+
+@app.route("/testJS",methods=['POST','GET'])
+def testJS():
+    return render_template ("cv/cv01.html")

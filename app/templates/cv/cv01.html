@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    {% extends './base.html' %}
+    {% block title %}Form to CV Page{% endblock %}
+    {% block customCSS %}
+    <link 
+        rel="stylesheet" 
+        href="{{ url_for('static',filename='css/cv.css') }}"
+        >
+    {% endblock %}
+
+    {% block body %}
+        <div class="parent0">
+            <div class="child1">
+                <img src="https://previews.123rf.com/images/jemastock/jemastock1706/jemastock170604295/79761622-mirando-la-cara-del-hombre-en-un-dibujo-animado-de-dibujos-animados-estilo-ilustraci%C3%B3n-vectorial.jpg?fj=1" width="120px" height="120px">
+            </div>
+            <div class="child2">
+                <h2 id="h2v">Nombres</h2>
+                <h4 id="h4v">Puesto a Postular</h4>
+            </div>
+        </div>
+        <div class="parent01">
+            <div class="child01">
+                <h2>CONTACTO</h2>
+                <hr>
+                <h3>987 654 321</h3>
+                <h3>email@gmail.com</h3>
+                <h3>Mexico DF</h3>
+                <h3>linkedin.com/jose-martinez</h3>
+
+                <h2>IDIOMAS</h2>
+                <hr>
+                <h3>Español: Nativo</h3>
+                <h3>Ingles: Intermedio</h3>
+                <h3>Frances: Basico</h3>
+
+                <h2>APTITUDES</h2>
+                <hr>
+                <ul>
+                    <li>Inteligencia Emocional</li>
+                    <li>Espiritu Critico</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Capcidad analítica</li>
+                    <li>Habilidades fisicas</li>
+                </ul>
+
+                <h2>HABILIDADES</h2>
+                <hr>
+                <ul>
+                    <li>Acondicionamiento fisico</li>
+                    <li>Creacion videos desportivos</li>
+                    <li>Pask office</li>
+                    <li>Tenis</li>
+                </ul>
+
+                <h2>OTROS INTERESES</h2>
+                <hr>
+                <ul>
+                    <li>Creador de videojuegos</li>
+                    <li>Paseos ecologicos</li>
+                    <li>Lectura grupal en inglés</li>
+                </ul>
+
+            </div>
+            <div class="child02">
+                <h2>PERFIL</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem in harum est blanditiis exercitationem veritatis obcaecati? Doloremque quibusdam eveniet rerum veniam saepe! Voluptas suscipit quaerat ut, dolorum adipisci enim!</p>
+
+                <h2>EXPERIENCIA LABORAL</h2>
+                <hr>
+                <h3 class="mtitle">Español: Nativo</h3>
+                <span id="curvado">Mexico DF,</span>
+                <span id="postcurva">| 2022-Actualmente</span>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur..</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut.</li>
+                </ul>
+
+                <h3 class="mtitle">Trabajador Social</h3>
+                <span class="curvado">Mexico DF,</span>
+                <span class="postcurva">| 2020-2022</span>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</li>
+                        
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut.</li>
+                </ul>
+                <h3 class="mtitle">Trabajador Social (Practice)</h3>
+                <span class="curvado">Miami, EE.UU</span>
+                <span class="postcurva">| 2019-2020</span>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                </ul>
+                <h2>FORMACION</h2>
+                <hr>
+                <h3 class="mtitle">Grado de Trabajo Social</h3>
+                <span class="curvado">ESMA,</span>
+                <span class="postcurva">| 2012-2015</span>
+                <h3 class="mtitle">Licenciatura Profesional</h3>
+                <span class="curvado">Universidad de la Frontera</span>
+                <span class="postcurva">| Mexico DF</span>
+
+            </div>
+        </div>
+        <i class="fa-regular fa-circle-phone"></i>
+    {% endblock %}
